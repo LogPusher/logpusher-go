@@ -12,7 +12,7 @@ LogPusher is easy to use on the client side thanks to its simple interface. Just
 ## Installation
 
 ```
-go get logpusher
+go get github.com/LogPusher/logpusher-go/src
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ package main
 
 import (
 	"fmt"
-	"lpusherlib/src"
+	"github.com/LogPusher/logpusher-go/src"
 	"time"
 )
 
