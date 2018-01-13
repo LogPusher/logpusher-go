@@ -1,4 +1,4 @@
-# LogPusher: Log tracking for Ruby
+# LogPusher: Log tracking for Go
 
 LogPusher is a system that allows you to receive notifications through your mobile on a single application. Apart from push notifications, you can also receive information without a mobile client via SMS and Mail service. You can integrate with any software through the API. Thanks to rapid API integration, you do not spend extra time for information and mail service. 
 
@@ -17,8 +17,34 @@ go get logpusher
 
 ## Usage
 
-```go
+```golang
+package main
 
+import (
+	"fmt"
+	"lpusherlib/src"
+	"time"
+)
+
+func main() {
+
+	client := logpusher.New("me@amazon.com", "strongpass", "logpusherapikey")
+
+	result, err := client.Push("My awesome log message",
+		"myawesomesite.com",
+		"E-commerce",
+		"Notice",
+		"EVENT0",
+		time.Now(),
+		time.Now(),
+	)
+
+	if err != nil {
+		panic(err.Error())
+	}
+
+	fmt.Println(result)
+}
 ```
 
 ## Support
