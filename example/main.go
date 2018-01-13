@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"lpusherlib/src"
 	"time"
+
+	"github.com/LogPusher/logpusher-go/src"
 )
 
 func main() {
