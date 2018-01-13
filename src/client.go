@@ -118,7 +118,7 @@ func (c *Client) unmarshall(rspText string) (result PushResult, err error) {
 
 func (c *Client) reqValues() *bytes.Buffer {
 
-	currentTime := time.Now().Format("01.02.2006 00:00:00")
+	currentTime := time.Now().Format("01.02.2006 15:04:05")
 
 	values := map[string]string{
 		"AuthKey":     c.generateAuthKey(currentTime),

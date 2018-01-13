@@ -2,14 +2,13 @@ package main
 
 import (
 	"fmt"
+	logpusher "logpusher-go/src"
 	"time"
-
-	"github.com/LogPusher/logpusher-go/src"
 )
 
 func main() {
 
-	client := logpusher.New("me@amazon.com", "strongpass", "logpusherapikey")
+	client := logpusher.New("xx@xx.com", "xXXXx", "xxxXXXxxx")
 
 	result, err := client.Push("My awesome log message",
 		"myawesomesite.com",
@@ -24,5 +23,5 @@ func main() {
 		panic(err.Error())
 	}
 
-	fmt.Println(result)
+	fmt.Println(result.Message)
 }
