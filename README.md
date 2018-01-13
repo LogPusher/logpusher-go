@@ -49,8 +49,8 @@ func main() {
 
 ## Support
 
-* [Search open and closed issues](https://github.com/LogPusher/logpusher-ruby/issues?utf8=✓&q=is%3Aissue) for similar problems
-* [Report a bug or request a feature](https://github.com/LogPusher/logpusher-ruby/issues/new)
+* [Search open and closed issues](https://github.com/LogPusher/logpusher-go/issues?utf8=✓&q=is%3Aissue) for similar problems
+* [Report a bug or request a feature](https://github.com/LogPusher/logpusher-go/issues/new)
 
 ## Contributing
 
